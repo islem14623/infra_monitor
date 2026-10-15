@@ -1,0 +1,8 @@
+route:
+  receiver: telegram
+
+receivers:
+  - name: telegram
+    telegram_configs:
+      - bot_token: "MyBotToken"
+        chat_id: MyChatId
