@@ -1,3 +1,4 @@
+#!/bin/bash
    echo "--- $(date) ---"
 echo "===Memory usage==="
 echo "$(free -h)"

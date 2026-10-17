@@ -1,0 +1,6 @@
+[Unit]
+Description=Health check script
+
+[Service]
+Type=oneshot
+ExecStart=/home/islem/infra-monitor/health_check.sh
