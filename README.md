@@ -69,7 +69,7 @@ In Grafana:
 - node_exporter in a container sees the container's disk, not the host's. I fixed it by mounting the host `/` as read-only and using `--path.rootfs=/host`.
 - Building the Bash version first helped me understand what Prometheus actually measures.
 - The monitoring found a real problem: my root disk was at 90%.
-
+- Grafana, Prometheus and Alertmanager are bound to 127.0.0.1. node_exporter is not published, because Prometheus reaches it through the Docker network.
 ## Next steps
 
 - [ ] Alerts with Alertmanager
